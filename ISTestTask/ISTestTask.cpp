@@ -20,7 +20,7 @@
 // constants
 #define _BUFFER_SIZE_ 100
 #define _FILE_INFO_ _T("digest.disi")
-#define _SLEEP_TIME_  15000 // 10s
+#define _SLEEP_TIME_  15000 // 
 
 std::map<std::wstring, UINT32> digestSignatureMap;
 
@@ -48,7 +48,7 @@ int _tmain(int argc, _TCHAR* argv[])
     }
     
     std::wcout << L"This program calculates the signature files in a directory and subdirectories in which it is located." << std::endl;
-    std::wcout << L"The program checks the signature every " << 10 
+    std::wcout << L"The program checks the signature every " << _SLEEP_TIME_ 
                   << "  seconds, if the signatures do not match, it displays a list of files and the number of iteration." << std::endl; 
 
     std::wcout << std::endl << std::endl;
